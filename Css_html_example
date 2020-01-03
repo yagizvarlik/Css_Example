@@ -1,0 +1,123 @@
+<!--HTML SATIIRI -->
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <!-- Türkçe Karakter -->
+        <link rel="stylesheet" type="text/css" href="../CSS_DERS/CSS_DERS1.css">
+        <!--Css için hedef dosya belirleme -->
+        <title> CSS DERS </title>
+        <!-- Başlık -->
+
+
+    </head>
+
+    <body>
+        <h1> JARVIS </h1>
+        <h2> FRIDAY </h2>
+        <p style="color: green; font-size:20px; "> KARALAMALAR </p> <a href="https://google.com">Buraya Tıklayınız. </a>
+
+        <p class="hepsibuyuk">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </p>
+        <p class="ornek"> MARK 77777 </p>
+        <div id="sayfa">
+            <!-- Çerçevenin İd si-->
+            <h1> IRON MAN</h1>
+            <!-- divin içine yazdığın yazı akan görselde üstünde durur-->
+        </div>
+        <div id=kutu>
+            <h1> KUTU</h1>
+        </div>
+    </body>
+
+    </html>
+    <!-- HTML SATIIRI SON -->
+    --------------------------------------------
+    /* CSS SATIRI */
+    h1 {
+    color: red;
+    font-size: 40px;
+}
+
+body {
+    background-color: darkslategray;
+    /* Arka plan renk ayarlaması */
+}
+
+h2 {
+    font-size: 40px;
+    /* Yazı fontu ayarlaması */
+}
+
+p {
+    line-height: 20px;
+    /* paragraf satır boyutu */
+    word-spacing: 5px;
+    /* kelimeler arası boşluk */
+    letter-spacing: 5px;
+    /* harfler arası boşluk */
+    text-align: center;
+    /* yazıyı hizlama,ortalama,sol,sağ*/
+    text-decoration: underline;
+    /* yazı dekorasyonu: altını,üzerini,üstünü çizme*/
+    text-indent: 15px;
+    /* paragraf başı mesafe */
+}
+
+p.hepsibuyuk {
+    text-transform: uppercase;
+    /* classını belirliyoruz ardından yazıdaki harfleri büyük yada küçük*/
+}
+
+a {
+    text-decoration: none;
+}
+
+div#sayfa {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    /* margin (otomatik) ortalıyor*/
+    border: 1px solid black;
+    background-image: url(ironman4k.jpg);
+    /* Belirlenen yerin arka resmi*/
+    background-repeat: no-repeat;
+    /*Arka plan resmini tekrarlama - tekrarla-x kor-y kordinatında */
+    background-position: center;
+    /*Görselin konumunu belirler*/
+    /*background-size: contain;*/
+    /*görseli ölçüye göre ayarlar - contain resimin kendi boyutu*/
+    background-attachment: local;
+    /* sayfayı hareket ettirdiğinde arka plan fotosu kayıyor*/
+    text-align: center;
+}
+
+div#kutu {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: 10px double red;
+    text-align: center;
+    background-color: black;
+    border-radius: 50px;
+    /* border-radius çerçeveyi oval yapıyor.*/
+    /*border-radius: 25px 20px 50px ; Tek satırda tüm kenar ölçüleri */
+    /* border-image: url(jarvis.png);
+    border: image slice 100px;
+    border-image-repeat: repeat;*/
+    box-shadow: 10px 30px 20px 20px black;
+    line-height: 200px;
+}
+
+p.ornek {
+    border-style: solid;
+    border-color: black;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-right-width: 15px;
+    border-left-width: 5px;
+}
+/* CSS SATIRI SON */
